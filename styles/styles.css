@@ -19,12 +19,17 @@ nav {
     box-shadow: 0 0 30px hsl(277, 78%, 91%);
   }
 
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }  
+  
+  
   main img {
     width: 150px;
     height: auto;
-    ...
+    
   }
-
 
 
   aside {
