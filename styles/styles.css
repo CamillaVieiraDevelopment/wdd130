@@ -1,5 +1,5 @@
 nav {
-    background-color: rgb(184, 174, 236);
+    background-color: rgb(56, 41, 129);
     padding: 10px;
   }
   nav a {
@@ -8,18 +8,48 @@ nav {
     padding: 20px;
   }
   h1 {
-    color: rgb(73, 41, 161);
+    color: rgb(56, 41, 129);
   }
     
   img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(56, 41, 129);
     padding: 2px;
-    box-shadow: 0 0 30px hsl(195, 67%, 88%);
+    box-shadow: 0 0 30px hsl(277, 78%, 91%);
   }
-  p {
-    padding: 10px;
+
+  main img {
+    width: 150px;
+    height: auto;
+    ...
+  }
+
+
+
+  aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid hsl(277 78% 91% / 0.2); /* 1️⃣ */
+    padding: 1rem;
+    background-color: #fff7fe;
+    color: #000000;
+    text-align: center;
   }
   
-    
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  
+  p {
+    padding: 0;
+  }
+  
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+  
