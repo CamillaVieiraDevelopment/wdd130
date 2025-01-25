@@ -1,4 +1,4 @@
-/* Definindo variáveis no :root */
+/* Root Variables */
 :root {
     --primary-color: #0D3651; /* Precision Blue */
     --secondary-color: #22577A; /* Light Lead */
@@ -6,45 +6,88 @@
     --accent-color: #57CC99; /* Emerald */
     --highlight-color: #80ED99; /* Light Green */
     --background-color: #C7F9CC; /* Tea Green */
-    --text-color: #0D3651; /* Precision Blue (para texto) */
-    --white-color: #FFFFFF; /* Branco */
+    --text-color: #0D3651; /* Precision Blue (for text) */
+    --white-color: #FFFFFF; /* White */
 }
 
-/* Estilizando títulos */
-h1, h2, h3 {
+/* Title Styles */
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     color: var(--primary-color);
     margin-bottom: 0.5em;
 }
 
-/* Estilizando parágrafos */
+/* Paragraph Styles */
 p {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Removendo sublinhados de links de mídia social */
+/* Removing underline from images inside social media links */
 nav.sociallinks a img {
     text-decoration: none;
-    display: inline-block;
 }
 
-/* Hiperlinks padrão */
-a {
-    color: var(--secondary-color);
-    text-decoration: underline;
+.herodiv {
+    position: relative;
+    text-align: center;
+    color: var(--white-color); /* White */
+    margin: 10px auto;
 }
 
-/* Estilo ao passar o mouse (hover) */
-a:hover {
-    color: var(--tertiary-color);
-    text-decoration: none;
+.herodiv img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Corpo do documento */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
+.hero-content {
+    position: absolute;
+    top: 50%; /* Vertically aligns to the center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Adjust as needed */
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+    color: var(--white-color); /* White */
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between text and image */
+    background-color: rgba(13, 54, 81, 0.8); /* Semi-transparent Precision Blue background */
+    border: 1px solid var(--secondary-color); /* Light Lead */
+    padding: 1rem;
+    box-shadow: 0 0 20px var(--tertiary-color); /* Viridian */
+    color: var(--white-color); /* White */
+}
+
+.info-box img {
+    width: 30%; /* Adjust image size as needed */
+    height: auto;
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid var(--highlight-color); /* Light Green */
+}
+
+.stats {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
+    border: 1px solid var(--primary-color); /* Precision Blue */
+    padding: 0.65rem;
+    box-shadow: 0 0 30px var(--primary-color); /* Precision Blue */
+    opacity: 0.9;
+}
+
+.article {
+    position: absolute;
+    background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
 }
