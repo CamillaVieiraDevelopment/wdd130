@@ -8,14 +8,34 @@
     --background-color: #C7F9CC; /* Tea Green */
     --text-color: #0D3651; /* Precision Blue (for text) */
     --white-color: #FFFFFF; /* White */
+    --heading-background-color: #C7F9CC; 
+    --heading-text-color: #0D3652;
+    --heading-font: "Montserrat", Sans Serif, Roboto;
+    --pading: 1 rem;
+    --border: 1 px solid #38A3A5;
+    }
+
+h1{
+    font-weight: 700;
+    color: var(--primary-color);
+    background-color: #0D3651;
+    padding: 15 px;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 20 px;
+    left: 200 px;
+    }
+
+h2{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 
-/* Title Styles */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
-    color: var(--primary-color);
-    margin-bottom: 0.5em;
-}
 
 /* Paragraph Styles */
 p {
@@ -29,45 +49,59 @@ nav.sociallinks a img {
     text-decoration: none;
 }
 
-.herodiv {
+.hero {
     position: relative;
     text-align: center;
     color: var(--white-color); /* White */
     margin: 10px auto;
 }
 
-.herodiv img {
+.hero img {
     width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover;
 }
 
 .hero-content {
     position: absolute;
-    top: 50%; /* Vertically aligns to the center */
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
     text-align: left;
+    display: inline-block;    
+
 }
 
 .hero-content h1 {
     font-size: 2.5rem; /* Adjust as needed */
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', Sans serif;
     margin-bottom: 1rem;
     color: var(--white-color); /* White */
+}
+
+.stats {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	background: radial-gradient(#C7F9CC, #57CC99);
+	border: 1px solid #0D3651;
+	padding: 0.65rem;
+	box-shadow: 0 0 30px #0D3651;
+	opacity: 0.9;
 }
 
 .info-box {
     display: flex;
     align-items: center;
     gap: 1rem; /* Space between text and image */
-    background-color: rgba(13, 54, 81, 0.8); /* Semi-transparent Precision Blue background */
-    border: 1px solid var(--secondary-color); /* Light Lead */
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
     padding: 1rem;
     box-shadow: 0 0 20px var(--tertiary-color); /* Viridian */
-    color: var(--white-color); /* White */
+    color: var(--white-color);
 }
+
 
 .info-box img {
     width: 30%; /* Adjust image size as needed */
@@ -83,11 +117,49 @@ nav.sociallinks a img {
     background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
     border: 1px solid var(--primary-color); /* Precision Blue */
     padding: 0.65rem;
-    box-shadow: 0 0 30px var(--primary-color); /* Precision Blue */
+    box-shadow: 0 0 30px var(--background-color); /* Precision Blue */
     opacity: 0.9;
 }
 
 .article {
     position: absolute;
+    top: 50 px;
+    left: 50 px;
     background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
+}
+
+.hero article img {
+    float: right;
+    width: 100 px;
+
+}
+
+footer {
+    position: relative; 
+    width: 100%;
+    border-top: 1px solid #22577A;
+    padding: 1rem; 
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    box-shadow: 0 -2px 5px #C7F9CC;
+}
+
+footer nav.sociallinks {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    margin-top: 0.5rem; 
+}
+
+footer nav.sociallinks img {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer nav.sociallinks img:hover {
+    transform: scale(1.2);
 }

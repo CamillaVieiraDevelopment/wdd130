@@ -21,8 +21,9 @@ h2 {
 	text-shadow: 3px 3px 5px #777;
 }
 
-.herodiv {
+.hero img {
 	margin: 10px auto;
+	position: relative;
 }
 
 .herodiv img {
