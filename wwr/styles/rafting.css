@@ -19,11 +19,11 @@ h1{
     font-weight: 700;
     color: var(--primary-color);
     background-color: #0D3651;
-    padding: 15 px;
+    padding: 15px;
     position: absolute;
     font-size: 1.5rem;
-    top: 20 px;
-    left: 200 px;
+    top: 20px;
+    left: 200px;
     }
 
 h2{
@@ -123,14 +123,14 @@ nav.sociallinks a img {
 
 .article {
     position: absolute;
-    top: 50 px;
-    left: 50 px;
+    top: 50px;
+    left: 50px;
     background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
 }
 
 .hero article img {
     float: right;
-    width: 100 px;
+    width: 100px;
 
 }
 
