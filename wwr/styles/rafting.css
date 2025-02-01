@@ -15,6 +15,7 @@
   --border: 1px solid #38A3A5; /* Standard border style */
 }
 
+
 /* Body Configuration */
 body {
   font-family: var(--heading-font); /* Uses the heading font for uniformity */
@@ -23,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 /* Header */
 header {
@@ -35,12 +37,14 @@ header {
   padding: var(--padding); /* Uses global padding */
 }
 
+
 /* Logo */
 .logo img {
   margin: 0 0.25rem 0 1rem;
   width: 120px; /* Fixes the logo width */
   height: auto;
 }
+
 
 /* Navigation */
 .navigation {
@@ -53,10 +57,12 @@ header {
   background-color: #38A3A5;
 }
 
+
 .navigation li {
   flex: 1; /* Distributes space evenly */
   text-align: center;
 }
+
 
 .navigation a {
   display: block;
@@ -67,11 +73,13 @@ header {
   font-family: Arial, sans-serif;
 }
 
+
 .navigation a:hover {
   color: #C7F9CC; /* Changes color on hover */
   font-weight: 700;
   text-decoration: underline;
 }
+
 
 /* Headings */
 h1 {
@@ -79,11 +87,13 @@ h1 {
   font-family: Acme, Arial, sans-serif;
 }
 
+
 h2 {
   font-size: 1.75rem;
   font-weight: bold;
   color: #FFFFFF;
 }
+
 
 /* Hero Section */
 .hero {
@@ -94,12 +104,14 @@ h2 {
   border-bottom: var(--border);
 }
 
+
 .hero h1 {
   color: #FFFFFF;
   margin-bottom: 1rem;
   margin-top: -20px; /* Moves the title up */
   font-size: 50px;
 }
+
 
 .hero p {
   margin-top: 30px;
@@ -109,6 +121,7 @@ h2 {
   font-size: 1.8rem; /* Increases font size */
   text-align: center; /* Centers the text */
 }
+
 
 .hero-image {
   display: flex; /* Enables flexbox alignment */
@@ -121,6 +134,7 @@ h2 {
   padding-right: 1rem; /* Adds spacing on the right */
 }
 
+
 .hero-image img {
   width: 50%;
   max-width: 300px;
@@ -128,6 +142,7 @@ h2 {
   border-radius: 8px;
   transform: translateX(500px) translateY(-60px); /* Moves the image right */
 }
+
 
 /* History Section */
 .history {
@@ -137,9 +152,11 @@ h2 {
   text-align: center;
 }
 
+
 .history h2 {
   color: #0D3651;
 }
+
 
 .content {
   display: flex;
@@ -150,16 +167,19 @@ h2 {
   margin: 0 auto;
 }
 
+
 .history p {
   flex: 1;
   padding: 10px;
 }
+
 
 .history-image {
   width: 150px;
   height: 150px;
   border-radius: 8px;
 }
+
 
 /* Adventures Section */
 .adventures {
@@ -168,6 +188,7 @@ h2 {
     text-align: center;
     padding: 3rem;
 }
+
 
 .adventure-gallery {
   display: flex;
@@ -178,10 +199,12 @@ h2 {
   margin: 0 auto;
 }
 
+
 .adventure-gallery figure {
   flex: 0 1 200px; /* Sets a fixed size for each figure */
   text-align: center;
 }
+
 
 .adventure-gallery img {
   width: 200px; /* Sets a default size */
@@ -191,11 +214,13 @@ h2 {
   border: 2px solid var(--accent-color);
 }
 
+
 .adventure-gallery figcaption {
   margin-top: 0.5rem;
   font-weight: bold;
   color: var(--highlight-color);
 }
+
 
 /* Footer */
 .footer {
@@ -208,10 +233,12 @@ h2 {
   border-top: var(--border);
 }
 
+
 .social-icons {
   display: flex;
   gap: 1rem; /* Space between icons */
 }
+
 
 .social-icons img {
   width: 40px; /* Standard icon size */
