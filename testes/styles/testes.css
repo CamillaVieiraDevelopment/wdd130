@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #0D3651;
+    --secondary-color: #22577A;
+    --tertiary-color: #38A3A5;
+    --accent-color: #57CC99;
+    --highlight-color: #80ED99;
+    --background-color: #C7F9CC;
+    --text-color: #0D3651;
+    --white-color: #FFFFFF;
+    --heading-background-color: #C7F9CC;
+    --heading-text-color: #0D3652;
+    --heading-font: "Montserrat", sans-serif;
+    --padding: 1rem;
+    --border: 1px solid #38A3A5;
+}
+
+body {
+    font-family: var(--heading-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    padding: var(--padding);
+    color: var(--white-color);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: var(--tertiary-color);
+}
+
+.logo-img {
+    width: 200px;
+    height: 200px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    padding: var(--padding);
+    color: var(--white-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: auto; /* Ajusta conforme o conteúdo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.hero img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da seção */
+    height: 100%; /* Faz a imagem ocupar toda a altura da seção */
+    object-fit: cover; /* Mantém a proporção e preenche o espaço */
+    float: center;
+}
+
+.hero_title{
+    float: center;
+}
+
+.history {
+    background-color: var(--accent-color);
+    padding: var(--padding);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-image {
+    width: 100px;
+    height: 100px;
+    background-color: var(--highlight-color);
+}
+
+.gallery {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: var(--padding);
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    padding-top: var(--padding);
+}
+
+.gallery-item {
+    width: 80px;
+    height: 80px;
+    background-color: var(--background-color);
+    text-align: center;
+    line-height: 80px;
+    border: var(--border);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--padding);
+}

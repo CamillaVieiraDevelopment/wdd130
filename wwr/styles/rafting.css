@@ -1,167 +1,220 @@
-/* Root Variables */
+/* Global Definitions */
 :root {
-    --primary-color: #0D3651; /* Precision Blue */
-    --secondary-color: #22577A; /* Light Lead */
-    --tertiary-color: #38A3A5; /* Viridian */
-    --accent-color: #57CC99; /* Emerald */
-    --highlight-color: #80ED99; /* Light Green */
-    --background-color: #C7F9CC; /* Tea Green */
-    --text-color: #0D3651; /* Precision Blue (for text) */
-    --white-color: #FFFFFF; /* White */
-    --heading-background-color: #C7F9CC; 
-    --heading-text-color: #0D3652;
-    --heading-font: "Montserrat", Sans Serif, Roboto;
-    --pading: 1 rem;
-    --border: 1 px solid #38A3A5;
-    }
+  --primary-color: #0D3651; /* Main brand color */
+  --secondary-color: #22577A; /* Secondary brand color */
+  --tertiary-color: #38A3A5; /* Tertiary color for accents */
+  --accent-color: #57CC99; /* Accent color for emphasis */
+  --highlight-color: #80ED99; /* Highlight color for special elements */
+  --background-color: #C7F9CC; /* General background color */
+  --text-color: #0D3651; /* Primary text color */
+  --white-color: #FFFFFF; /* Standard white color */
+  --heading-background-color: #C7F9CC; /* Background color for headings */
+  --heading-text-color: #0D3652; /* Text color for headings */
+  --heading-font: "Montserrat", sans-serif; /* Font used for headings */
+  --padding: 1rem; /* Standard padding for elements */
+  --border: 1px solid #38A3A5; /* Standard border style */
+}
 
-h1{
-    font-weight: 700;
-    color: var(--primary-color);
-    background-color: #0D3651;
-    padding: 15px;
-    position: absolute;
-    font-size: 1.5rem;
-    top: 20px;
-    left: 200px;
-    }
+/* Body Configuration */
+body {
+  font-family: var(--heading-font); /* Uses the heading font for uniformity */
+  background-color: #38A3A5; /* Sets the background color */
+  color: var(--text-color); /* Sets the text color */
+  margin: 0;
+  padding: 0;
+}
 
-h2{
+/* Header */
+header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 1fr; /* Defines the grid structure */
+  align-items: center; /* Aligns elements vertically */
+  border-bottom: 1px solid #C7F9CC; /* Adds a bottom border */
+  max-width: 1000px; /* Sets the maximum width */
+  padding: var(--padding); /* Uses global padding */
+}
+
+/* Logo */
+.logo img {
+  margin: 0 0.25rem 0 1rem;
+  width: 120px; /* Fixes the logo width */
+  height: auto;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centers navigation items */
+  background-color: #38A3A5;
+}
+
+.navigation li {
+  flex: 1; /* Distributes space evenly */
+  text-align: center;
+}
+
+.navigation a {
   display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
+  color: #FFFFFF; /* Sets link color */
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
 }
 
-
-/* Paragraph Styles */
-p {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
+.navigation a:hover {
+  color: #C7F9CC; /* Changes color on hover */
+  font-weight: 700;
+  text-decoration: underline;
 }
 
-/* Removing underline from images inside social media links */
-nav.sociallinks a img {
-    text-decoration: none;
+/* Headings */
+h1 {
+  font-size: 2rem;
+  font-family: Acme, Arial, sans-serif;
 }
 
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+/* Hero Section */
 .hero {
-    position: relative;
-    text-align: center;
-    color: var(--white-color); /* White */
-    margin: 10px auto;
+  background-color: var(--highlight-color);
+  background-image: url("../images/herodiv/rafting16_1024.jpg"); /* Adds a background image */
+  text-align: center;
+  padding: 3rem;
+  border-bottom: var(--border);
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.hero h1 {
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  margin-top: -20px; /* Moves the title up */
+  font-size: 50px;
 }
 
-.hero-content {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: left;
-    display: inline-block;    
-
+.hero p {
+  margin-top: 30px;
+  margin: 50px auto 1.5rem auto; /* Moves the text down */
+  color: #FFFFFF;
+  display: inline; /* Maintains inline behavior */
+  font-size: 1.8rem; /* Increases font size */
+  text-align: center; /* Centers the text */
 }
 
-.hero-content h1 {
-    font-size: 2.5rem; /* Adjust as needed */
-    font-family: 'Merriweather', Sans serif;
-    margin-bottom: 1rem;
-    color: var(--white-color); /* White */
+.hero-image {
+  display: flex; /* Enables flexbox alignment */
+  justify-content: flex-end; /* Moves the image to the right */
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding-right: 1rem; /* Adds spacing on the right */
 }
 
-.stats {
-	position: absolute;
-	bottom: 25px;
-	left: 25px;
-	background: radial-gradient(#C7F9CC, #57CC99);
-	border: 1px solid #0D3651;
-	padding: 0.65rem;
-	box-shadow: 0 0 30px #0D3651;
-	opacity: 0.9;
+.hero-image img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transform: translateX(500px) translateY(-60px); /* Moves the image right */
 }
 
-.info-box {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Space between text and image */
-    background-color: var(--tertiary-color);
-    border: 1px solid var(--secondary-color);
-    padding: 1rem;
-    box-shadow: 0 0 20px var(--tertiary-color); /* Viridian */
+/* History Section */
+.history {
+  background-color: #C7F9CC;
+  color: #22577A;
+  padding: 3rem;
+  text-align: center;
+}
+
+.history h2 {
+  color: #0D3651;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.history p {
+  flex: 1;
+  padding: 10px;
+}
+
+.history-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Adventures Section */
+.adventures {
+    background-color: var(--secondary-color);
     color: var(--white-color);
-}
-
-
-.info-box img {
-    width: 30%; /* Adjust image size as needed */
-    height: auto;
-    border-radius: 5px; /* Rounded corners */
-    border: 2px solid var(--highlight-color); /* Light Green */
-}
-
-.stats {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
-    border: 1px solid var(--primary-color); /* Precision Blue */
-    padding: 0.65rem;
-    box-shadow: 0 0 30px var(--background-color); /* Precision Blue */
-    opacity: 0.9;
-}
-
-.article {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background: radial-gradient(var(--white-color), var(--highlight-color)); /* White to Light Green gradient */
-}
-
-.hero article img {
-    float: right;
-    width: 100px;
-
-}
-
-footer {
-    position: relative; 
-    width: 100%;
-    border-top: 1px solid #22577A;
-    padding: 1rem; 
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    font-weight: 700;
-    font-style: italic;
     text-align: center;
-    box-shadow: 0 -2px 5px #C7F9CC;
+    padding: 3rem;
 }
 
-footer nav.sociallinks {
-    display: flex;
-    justify-content: center; 
-    gap: 1rem; 
-    margin-top: 0.5rem; 
+.adventure-gallery {
+  display: flex;
+  flex-wrap: nowrap; /* Keeps items in a single row */
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-footer nav.sociallinks img {
-    width: 24px;
-    height: auto;
-    transition: transform 0.3s ease;
+.adventure-gallery figure {
+  flex: 0 1 200px; /* Sets a fixed size for each figure */
+  text-align: center;
 }
 
-footer nav.sociallinks img:hover {
-    transform: scale(1.2);
+.adventure-gallery img {
+  width: 200px; /* Sets a default size */
+  height: 150px; /* Maintains proportion */
+  object-fit: cover; /* Prevents distortions */
+  border-radius: 8px;
+  border: 2px solid var(--accent-color);
 }
 
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--highlight-color);
+}
 
+/* Footer */
+.footer {
+  background-color: #38A3A5;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between; /* Distributes space between content and icons */
+  align-items: center;
+  color: #FFFFFF;
+  border-top: var(--border);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Space between icons */
+}
+
+.social-icons img {
+  width: 40px; /* Standard icon size */
+  height: 40px;
+  border-radius: 50%; /* Creates a rounded effect */
+}
