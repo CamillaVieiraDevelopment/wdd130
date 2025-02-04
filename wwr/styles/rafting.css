@@ -211,7 +211,7 @@ h2 {
   height: 150px; /* Maintains proportion */
   object-fit: cover; /* Prevents distortions */
   border-radius: 8px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--background-color);
 }
 
 

@@ -1,10 +1,8 @@
-   
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: Merriweather, Georgia, serif;
@@ -12,7 +10,6 @@ body {
   color: #333;
   background: #fff;
 }
-
 
 header {
   margin: 0 auto;
@@ -26,7 +23,6 @@ h1 {
   text-align: center;
 }
 
-
 form {
   width: 650px;
   margin: 0 auto;
@@ -37,7 +33,6 @@ form {
   display: grid;
 }
 
-
 fieldset {
   display: grid;
   grid-gap: .5rem;
@@ -46,30 +41,26 @@ fieldset {
   padding: 1rem;
 }
 
-
 legend {
   padding: 0.5rem;
   color: navy;
   font-size: 1.3em;
 }
 
-
 label, input, button, select, textarea {
   font-family: Roboto, Arial, sans-serif;
 }
 
-
 label {
-  text-align: right;
+  text-align: left; /* Alinhamento à esquerda */
   padding-right: 1rem;
 }
-
 
 input, select, textarea {
   padding: 0.5rem;
   font-size: 1.1rem;
+  text-align: left; /* Alinhamento à esquerda */
 }
-
 
 input[type="checkbox"] {
   width: 22px;
@@ -77,6 +68,20 @@ input[type="checkbox"] {
   vertical-align: bottom;
 }
 
+.form-item {
+  display: grid;
+  align-items: center;
+  text-align: left; /* Alinhamento à esquerda */
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
 
 button {
   margin: 1rem;
@@ -85,19 +90,4 @@ button {
   border: none;
   border-radius: .5rem;
   padding: .75rem;
-  font-size: 1.2rem;
-}
-
-button:hover {
-  background-color: darkgreen;
-}
-
-
-footer {
-  margin: 1rem auto 0;
-  width: 650px;
-  text-align: center;
-  font-size: 0.8em;
-  color: #777;
-  border-top: 1px solid #ccc;
-}
+  font
