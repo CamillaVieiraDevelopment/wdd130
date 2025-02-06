@@ -28,24 +28,31 @@
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <h1>Acqua Venture Rafting</h1>
+            <div class="hero-image">
+                <img src="images/banner/rafting17_600.jpg" alt="Rafting Adventure">            
+            </div>
+        </section>
+
         <div class="container">
             <section class="how-contact-us">
-                <h1>Our Contact Us</h1>
+                <h2>Our Contact Us</h2> <!-- Corrigido para <h2> -->
                 <p><br></p>
-                <p>Address</p>
+                <h2>Contact Information</h2>
+                <p>Address: Eagles Nest Ln King George, VA 22485, EUA</p> <!-- Corrigido o fechamento -->
                 <p><br></p>
-                <p>Email</p>
+                <p>Email: rafting@acquaventure.com</p>
                 <p><br></p>
-                <p>Email</p>
-                <p><br></p>
-                <p>Maps</p>
-                <br>
-                <p>_______________________________________________.</p>
+                <p>See the localization on the map:</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50085.74503557428!2d-77.15109774813806!3d38.317515152920464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738848506944!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
                 <br>
             </section>
     
             <section class="send-message-us">
-                <h2>Send Message for Us</h2>
+                <h2>Send us a Message</h2>
                 <form>
                     <fieldset>
                         <legend>Contact Information</legend>
@@ -70,20 +77,23 @@
                             <div>
                                 <input type="radio" id="reservation" name="contact" value="Reservation Question">
                                 <label for="reservation">Reservation Question</label>
-                            </div>                                         
-                           
+                            </div>
+                            <div>
+                                <input type="radio" id="suggestion" name="contact" value="Website Suggestion"> <!-- Corrigido “Sugestion” para “Suggestion” -->
+                                <label for="suggestion">Website Suggestion</label> <!-- Corrigido o atributo “for” -->
+                            </div>                                          
+                        </div> <!-- Fechamento correto da div -->
+
                         <div class="write_message">
                             <br>
                             <label for="feedback">Write your message for us:</label>
-                            <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your message here..."></textarea> <!-- Melhorado o placeholder -->
                         </div>
-
 
                         <div class="newsletter_option">
                             <input type="checkbox" id="subscribe" name="subscribe">
                             <label for="subscribe"> Please subscribe me to the monthly newsletter</label>
                         </div>
-                        
                         
                     </fieldset>
     
@@ -93,14 +103,13 @@
         </div>
     </main>
     
-        
-<footer class="footer">
-    <span>&copy; 2025 Acqua Venture Rafting. All Rights Reserved.</span>
-    <div class="social-icons">
-        <img src="images/social_midias/facebook.png" alt="Facebook">
-        <img src="images/social_midias/twitter.png" alt="Twitter">
-        <img src="images/social_midias/instagram.png" alt="Instagram">
-    </div>
-</footer>
+    <footer class="footer">
+        <span>&copy; 2025 Acqua Venture Rafting. All Rights Reserved.</span>
+        <div class="social-icons">
+            <img src="images/social_midias/facebook.png" alt="Facebook">
+            <img src="images/social_midias/twitter.png" alt="Twitter">
+            <img src="images/social_midias/instagram.png" alt="Instagram">
+        </div>
+    </footer>
 </body>
 </html>
