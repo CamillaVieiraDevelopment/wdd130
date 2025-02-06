@@ -1,0 +1,157 @@
+/* Global Definitions */
+:root {
+    --primary-color: #0D3651; /* Main brand color */
+    --secondary-color: #22577A; /* Secondary brand color */
+    --tertiary-color: #38A3A5; /* Tertiary color for accents */
+    --accent-color: #57CC99; /* Accent color for emphasis */
+    --highlight-color: #80ED99; /* Highlight color for special elements */
+    --background-color: #C7F9CC; /* General background color */
+    --text-color: #0D3651; /* Primary text color */
+    --white-color: #FFFFFF; /* Standard white color */
+    --heading-background-color: #C7F9CC; /* Background color for headings */
+    --heading-text-color: #0D3652; /* Text color for headings */
+    --heading-font: "Montserrat", sans-serif; /* Font used for headings */
+    --padding: 1rem; /* Standard padding for elements */
+    --border: 1px solid #38A3A5; /* Standard border style */
+  }
+  
+  
+  /* Body Configuration */
+  body {
+    font-family: var(--heading-font); /* Uses the heading font for uniformity */
+    background-color: #38A3A5; /* Sets the background color */
+    color: var(--text-color); /* Sets the text color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Header */
+  header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr; /* Defines the grid structure */
+    align-items: center; /* Aligns elements vertically */
+    border-bottom: 1px solid #C7F9CC; /* Adds a bottom border */
+    max-width: 1000px; /* Sets the maximum width */
+    padding: var(--padding); /* Uses global padding */
+  }
+  
+  
+  /* Logo */
+  .logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 120px; /* Fixes the logo width */
+    height: auto;
+  }
+  
+  
+  /* Navigation */
+  .navigation {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centers navigation items */
+    background-color: #38A3A5;
+  }
+  
+  
+  .navigation li {
+    flex: 1; /* Distributes space evenly */
+    text-align: center;
+  }
+  
+  
+  .navigation a {
+    display: block;
+    color: #FFFFFF; /* Sets link color */
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .navigation a:hover {
+    color: #C7F9CC; /* Changes color on hover */
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.how-contact-us, .send-message-us {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.how-contact-us {
+    margin-right: 10px;
+}
+
+.send-message-us {
+    margin-left: 10px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+  
+  
+  /* Footer */
+  .footer {
+    background-color: #38A3A5;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* Distributes space between content and icons */
+    align-items: center;
+    color: #FFFFFF;
+    border-top: var(--border);
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem; /* Space between icons */
+  }
+  
+  
+  .social-icons img {
+    width: 40px; /* Standard icon size */
+    height: 40px;
+    border-radius: 50%; /* Creates a rounded effect */
+  }
+  
