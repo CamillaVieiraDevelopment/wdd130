@@ -28,81 +28,91 @@
         </nav>
     </header>
     <main>
-        <main>
-            <div class="container">
-                <section class="hero">
-                    <h1>Acqua Venture Rafting</h1>
-                    <div class="hero-section">
-                        <img src="images/banner/rafting17_600.jpg" alt="Rafting Adventure">
-                    </div>
-                </section>
-        
-                <div class="bottom-section">
-                    <div class="box1 how-contact-us">
-                        <h2>Our Contact Us</h2>
-                        <p>Address: Eagles Nest Ln King George, VA 22485, EUA</p>
-                        <p>Email: rafting@acquaventure.com</p>
-                        <p>See the localization on the map:</p>
-                        <iframe 
-                            src="https://www.google.com/maps/embed?..."
-                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    <div class="box2 specialized-support-team">
-                        <h2>Talk to our specialized support team</h2>
-                        <p>"Hi! I'm Allana, and I specialize in helping beginners get started."</p>
-                        <img src="images/employees/allana-01.png" alt="Allana">
-                        <p>"Hello! I'm Cindy. I provide support for intermediate users."</p>
-                        <img src="images/employees/cindy_02.png" alt="Cindy">
-                        <p>"Hey there! I'm Peter. If you're an advanced user, I’m ready to help!"</p>
-                        <img src="images/employees/peter_03.png" alt="Peter">
-                    </div>
-                    <div class="box3 send-message-us">
-                        <h2>Send us a Message</h2>
-                        <form>
-                            <fieldset>
-                                <legend>Contact Information</legend>
-                                <div class="form-item">
-                                    <label for="fullname">Full Name:</label>
-                                    <input type="text" id="fullname" name="fullname">
-                                </div>
-                                <div class="form-item">
-                                    <label for="useremail">Email:</label>
-                                    <input type="email" id="useremail" name="useremail">
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Answer:</legend>
-                                <div class="reason_contact">
-                                    <label>What is the reason for your contact?</label>
-                                    <div>
-                                        <input type="radio" id="general" name="contact" value="General Inquiry">
-                                        <label for="general">General Inquiry</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="reservation" name="contact" value="Reservation Question">
-                                        <label for="reservation">Reservation Question</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="suggestion" name="contact" value="Website Suggestion">
-                                        <label for="suggestion">Website Suggestion</label>
-                                    </div>
-                                </div>
-                                <div class="write_message">
-                                    <label for="feedback">Write your message for us:</label>
-                                    <textarea id="feedback" name="feedback" rows="4" placeholder="Write your message here..."></textarea>
-                                </div>
-                                <div class="newsletter_option">
-                                    <input type="checkbox" id="subscribe" name="subscribe">
-                                    <label for="subscribe"> Please subscribe me to the monthly newsletter</label>
-                                </div>
-                            </fieldset>
-                            <button type="submit">Submit Poll</button>
-                        </form>
-                    </div>
+        <div class="container">
+            <section class="hero">
+                <h1>Contact Us</h1>
+                <div class="hero-section"></div>
+            </section>
+            
+            <div class="bottom-section">
+                <div class="box1 how-contact-us">
+                    <h2>Our Contact Us</h2>
+                    <p>📞 <strong>Telephone:</strong> +1 304-555-1234</p>
+                    <p>📧 <strong>E-mail:</strong> rafting@acquaventure.com</p>
+                    <p>🚩 <strong>Address:</strong> Eagles Nest Ln King George, VA 22485, EUA</p>
+                    <p>See the localization on the map:</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50085.74503557428!2d-77.15109774813806!3d38.317515152920464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738848506944!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="box2 specialized-support-team">
+                    <h2>Talk to our specialized support team</h2>
+                    <img src="images/employees/allana-01.png" alt="Allana">
+                    <p>"Hi! I'm Allana, and I specialize in helping beginners get started."</p>
+                    <img src="images/employees/cindy_02.png" alt="Cindy">
+                    <p>"Hello! I'm Cindy. I provide support for intermediate users."</p>
+                    <img src="images/employees/peter_03.png" alt="Peter">
+                    <p>"Hey there! I'm Peter. If you're an advanced user, I’m ready to help!"</p>
+                </div>
+                <div class="box3 send-message-us">
+                    <h2>Send us a Message</h2>
+                    <form>
+                        <fieldset>
+                            <legend><strong>Contact Information:</strong></legend>
+                            <div class="form-item">
+                                <label for="fullname">Full Name:</label>
+                                <input type="text" id="fullname" name="fullname">
+                            </div>
+                            <div class="form-item">
+                                <label for="useremail">Email:</label>
+                                <input type="email" id="useremail" name="useremail">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Answer:</strong></legend>
+                            <label>What is the reason for your contact?</label>
+                            <div>
+                                <input type="radio" id="general" name="contact_reason" value="General Inquiry">
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="reservation" name="contact_reason" value="Reservation Question">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="suggestion" name="contact_reason" value="Website Suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Choose an Expert:</strong></legend>
+                            <label>Which of the experts would you like to send a message to?</label>
+                            <div>
+                                <input type="radio" id="Allana" name="expert_contact" value="Allana">
+                                <label for="Allana">Allana - specialist in helping beginners.</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Cindy" name="expert_contact" value="Cindy">
+                                <label for="Cindy">Cindy - specialist for intermediate users.</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Peter" name="expert_contact" value="Peter">
+                                <label for="Peter">Peter - specialist for advanced users.</label>
+                            </div>
+                        </fieldset>
+                        <div class="write_message">
+                            <label for="feedback">Write your message for us:</label>
+                            <textarea id="feedback" name="feedback" rows="4" placeholder="Type your message here..."></textarea>
+                        </div>
+                        <div class="newsletter_option">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe"> Please subscribe me to the monthly newsletter</label>
+                        </div>
+                        <button type="submit">Submit Poll</button>
+                    </form>
                 </div>
             </div>
-        </main>
-        
+        </div>
+    </main>
     <footer class="footer">
         <span>&copy; 2025 Acqua Venture Rafting. All Rights Reserved.</span>
         <div class="social-icons">
