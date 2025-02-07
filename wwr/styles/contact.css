@@ -18,8 +18,8 @@
 /* Body Configuration */
 body {
   font-family: var(--heading-font);
-  background-color: var(--tertiary-color);
-  color: var(--text-color);
+  background-color: #38A3A5;
+  color: #0D3651;
   margin: 0;
   padding: 0;
 }
@@ -30,7 +30,7 @@ header {
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
-  border-bottom: 1px solid var(--background-color);
+  border-bottom: 1px solid #C7F9CC;
   max-width: 1000px;
   padding: var(--padding);
 }
@@ -51,7 +51,7 @@ header {
   margin: 0;
   justify-content: center;
   gap: 10px;
-  background-color: var(--tertiary-color);
+  background-color: #38A3A5;
 }
 
 .navigation li {
@@ -60,7 +60,7 @@ header {
 
 .navigation a {
   display: block;
-  color: var(--white-color);
+  color: #FFFFFF;
   padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -68,7 +68,7 @@ header {
 }
 
 .navigation a:hover {
-  color: var(--background-color);
+  color: #C7F9CC;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -90,32 +90,32 @@ main {
 /* Hero Section */
 .hero {
   position: relative;
-  background-color: var(--highlight-color);
+  background-color: #80ED99;
   background-image: url("../images/banner/rafting14_600.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 3rem;
-  border-bottom: var(--border);
+  border-bottom: 1px solid #38A3A5;
   width: 100%;
   height: auto;
 }
 
 .hero h1 {
-  color: var(--white-color);
+  color: #FFFFFF;
   font-size: 60px;
-  background-color: rgba(87, 204, 153, 0.5);
+  background-color: #38A3A580;
   display: inline;
 }
 
 .hero h2 {
   font-size: 24px;
-  color: #333;
+  color: #22577A;
 }
 
 .hero p {
   font-size: 18px;
-  color: #555;
+  color: #22577A;
 }
 
 .hero p strong {
@@ -130,7 +130,6 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Hero Section Image */
@@ -151,7 +150,7 @@ main {
 .bottom-section > div {
   flex: 1;
   padding: 20px;
-  background: var(--white-color);
+  background: #FFFFFF;
   color: #002a80;
   font-size: 15px;
   text-align: left;
@@ -162,10 +161,11 @@ main {
 .box2 .specialized-support-team > div {
   flex: 1;
   padding: 20px;
-  background: var(--background-color);
-  color: var(--secondary-color);
+  background: #38A3A5;
+  color: #38A3A5;
   text-align: center;
   border-radius: 8px;
+  border-color: #57CC99;
 }
 
 .bottom-section img {
@@ -175,10 +175,16 @@ main {
   margin: 10px auto;
 }
 
+.write_message {
+  border-color: #38A3A5;
+  box-sizing: 100 px ;
+}
+
+
 /* Button */
 button {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  background-color: #0D3651;
+  color: #FFFFFF;
   padding: 12px 18px;
   border: none;
   border-radius: 6px;
@@ -189,18 +195,18 @@ button {
 }
 
 button:hover {
-  background-color: var(--tertiary-color);
+  background-color: #38A3A5;
 }
 
 /* Footer */
 .footer {
-  background-color: var(--tertiary-color);
+  background-color: #38A3A5;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--white-color);
-  border-top: var(--border);
+  color: #FFFFFF;
+  border-top: 1px solid #38A3A5;
 }
 
 /* Social Icons */
@@ -214,3 +220,14 @@ button:hover {
   height: 40px;
   border-radius: 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
