@@ -1,148 +1,104 @@
 /* Global Definitions */
 :root {
-  --primary-color: #0D3651; /* Main brand color */
-  --secondary-color: #22577A; /* Secondary brand color */
-  --tertiary-color: #38A3A5; /* Tertiary color for accents */
-  --accent-color: #57CC99; /* Accent color for emphasis */
-  --highlight-color: #80ED99; /* Highlight color for special elements */
-  --background-color: #C7F9CC; /* General background color */
-  --text-color: #0D3651; /* Primary text color */
-  --white-color: #FFFFFF; /* Standard white color */
-  --heading-background-color: #C7F9CC; /* Background color for headings */
-  --heading-text-color: #0D3652; /* Text color for headings */
-  --heading-font: "Montserrat", sans-serif; /* Font used for headings */
-  --padding: 1rem; /* Standard padding for elements */
-  --border: 1px solid #38A3A5; /* Standard border style */
+  --padding: 1rem;
+  --border: 1px solid #38A3A5;
 }
-
 
 /* Body Configuration */
 body {
-  font-family: var(--heading-font); /* Uses the heading font for uniformity */
-  background-color: #38A3A5; /* Sets the background color */
-  color: var(--text-color); /* Sets the text color */
+  font-family: "Montserrat", sans-serif;
+  background-color: #38A3A5;
+  color: #0D3651;
   margin: 0;
   padding: 0;
 }
-
 
 /* Header */
 header {
   margin: 1rem auto;
   display: grid;
-  grid-template-columns: 120px 1fr; /* Defines the grid structure */
-  align-items: center; /* Aligns elements vertically */
-  border-bottom: 1px solid #C7F9CC; /* Adds a bottom border */
-  max-width: 1000px; /* Sets the maximum width */
-  padding: var(--padding); /* Uses global padding */
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  border-bottom: 1px solid #38A3A5;
+  max-width: 1000px;
+  padding: 1rem;
 }
-
 
 /* Logo */
 .logo img {
   margin: 0 0.25rem 0 1rem;
-  width: 120px; /* Fixes the logo width */
+  width: 120px;
   height: auto;
 }
-
 
 /* Navigation */
 .navigation {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: center; /* Centers navigation items */
+  justify-content: center;
+  gap: 10px;
   background-color: #38A3A5;
 }
 
-
 .navigation li {
-  flex: 1; /* Distributes space evenly */
-  text-align: center;
+  flex: none;
 }
-
 
 .navigation a {
   display: block;
-  color: #FFFFFF; /* Sets link color */
+  color: #FFFFFF;
   padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Arial, sans-serif;
 }
 
-
 .navigation a:hover {
-  color: #C7F9CC; /* Changes color on hover */
+  color: #C7F9CC;
   font-weight: 700;
   text-decoration: underline;
 }
 
-
-/* Headings */
-h1 {
-  font-size: 2rem;
-  font-family: Acme, Arial, sans-serif;
-}
-
-
-h2 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #FFFFFF;
-}
-
-
 /* Hero Section */
-.hero {
-  background-color: var(--highlight-color);
-  background-image: url("../images/herodiv/rafting16_1024.jpg"); /* Adds a background image */
+.hero,
+.hero-contact {
+  background-color: #80ED99;
   text-align: center;
   padding: 3rem;
-  border-bottom: var(--border);
+  border-bottom: 1px solid #38A3A5;
+  background-image: url("../images/herodiv/rafting16_1024.jpg");
 }
 
-
-.hero h1 {
+.hero h1,
+.hero-contact h1 {
   color: #FFFFFF;
-  margin-bottom: 1rem;
-  margin-top: -20px; /* Moves the title up */
-  font-size: 50px;
+  font-size: 40px;
+  display: inline;
 }
 
-
-.hero p {
-  margin-top: 30px;
-  margin: 50px auto 1.5rem auto; /* Moves the text down */
+.hero p,
+.hero-contact p {
+  font-size: 1.8rem;
   color: #FFFFFF;
-  display: inline; /* Maintains inline behavior */
-  font-size: 1.8rem; /* Increases font size */
-  text-align: center; /* Centers the text */
+  text-align: center;
 }
 
+.hero-contact p strong {
+  font-weight: bold;
+  font-size: 20px;
+}
 
-.hero-image {
-  display: flex; /* Enables flexbox alignment */
-  justify-content: flex-end; /* Moves the image to the right */
+/* Hero Section Image */
+.hero-image,
+.hero-section-contact img {
   width: 100%;
-  max-width: 800px;
   height: auto;
-  margin: 0 auto;
-  border-radius: 8px;
-  padding-right: 1rem; /* Adds spacing on the right */
+  display: block;
+  background-image: url("../images/herodiv/rafting16_1024.jpg");
 }
-
-
-.hero-image img {
-  width: 50%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  transform: translateX(500px) translateY(-60px); /* Moves the image right */
-}
-
 
 /* History Section */
 .history {
@@ -152,11 +108,9 @@ h2 {
   text-align: center;
 }
 
-
 .history h2 {
   color: #0D3651;
 }
-
 
 .content {
   display: flex;
@@ -167,12 +121,10 @@ h2 {
   margin: 0 auto;
 }
 
-
 .history p {
   flex: 1;
   padding: 10px;
 }
-
 
 .history-image {
   width: 150px;
@@ -180,68 +132,138 @@ h2 {
   border-radius: 8px;
 }
 
-
 /* Adventures Section */
 .adventures {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    text-align: center;
-    padding: 3rem;
+  background-color: #22577A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3rem;
 }
-
 
 .adventure-gallery {
   display: flex;
-  flex-wrap: nowrap; /* Keeps items in a single row */
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-
 .adventure-gallery figure {
-  flex: 0 1 200px; /* Sets a fixed size for each figure */
+  flex: 0 1 200px;
   text-align: center;
 }
 
-
 .adventure-gallery img {
-  width: 200px; /* Sets a default size */
-  height: 150px; /* Maintains proportion */
-  object-fit: cover; /* Prevents distortions */
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 8px;
-  border: 2px solid var(--background-color);
+  border: 2px solid #C7F9CC;
 }
-
 
 .adventure-gallery figcaption {
   margin-top: 0.5rem;
   font-weight: bold;
-  color: var(--background-color);
+  color: #C7F9CC;
 }
 
+.box2.support-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.box2.support-team img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  border-color: #57CC99;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.box2.support-team p {
+  margin-top: 10px;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.bottom-section > div {
+  flex: 1;
+  padding: 20px;
+  background: #FFFFFF;
+  color: #002a80;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+/* Write Message */
+.write_message {
+  border-color: #38A3A5;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  min-height: 150px;
+  padding: 10px;
+}
+
+.write_message textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #38A3A5;
+  border-radius: 5px;
+}
+
+/* Button */
+button {
+  background-color: #0D3651;
+  color: #FFFFFF;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #38A3A5;
+}
 
 /* Footer */
 .footer {
   background-color: #38A3A5;
   padding: 1.5rem;
   display: flex;
-  justify-content: space-between; /* Distributes space between content and icons */
+  justify-content: space-between;
   align-items: center;
   color: #FFFFFF;
-  border-top: var(--border);
+  border-top: 1px solid #38A3A5;
 }
 
 
+/* Social Icons */
 .social-icons {
   display: flex;
-  gap: 1rem; /* Space between icons */
+  gap: 1rem;
 }
 
-
 .social-icons img {
-  width: 40px; /* Standard icon size */
+  width: 40px;
   height: 40px;
-  border-radius: 50%; /* Creates a rounded effect */
+  border-radius: 50%;
 }

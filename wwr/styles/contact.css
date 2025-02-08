@@ -1,4 +1,4 @@
-/* page contact us: Global Definitions */
+/* Global Definitions */
 :root {
   --primary-color: #0D3651;
   --secondary-color: #22577A;
@@ -15,7 +15,7 @@
   --border: 1px solid #38A3A5;
 }
 
-/* page contact us: Body Configuration */
+/* Body Configuration */
 body {
   font-family: var(--heading-font);
   background-color: var(--tertiary-color);
@@ -24,7 +24,7 @@ body {
   padding: 0;
 }
 
-/* page contact us: Header */
+/* Header */
 header {
   margin: 1rem auto;
   display: grid;
@@ -35,14 +35,14 @@ header {
   padding: var(--padding);
 }
 
-/* page contact us: Logo */
+/* Logo */
 .logo img {
   margin: 0 0.25rem 0 1rem;
   width: 120px;
   height: auto;
 }
 
-/* page contact us: Navigation */
+/* Navigation */
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -73,34 +73,16 @@ header {
   text-decoration: underline;
 }
 
-/* page contact us: Main Content */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.container-contact {
-  width: 100%;
-  height: auto;
-}
-
-/* page contact us: Hero Section */
+/* Hero Section */
+.hero,
 .hero-contact {
-  position: relative;
   background-color: var(--highlight-color);
-  background-image: url("../images/banner/rafting14_600.jpg");
-  background-size: cover;
-  background-position: center;
   text-align: center;
   padding: 3rem;
   border-bottom: var(--border);
-  width: 100%;
-  height: auto;
 }
 
+.hero h1,
 .hero-contact h1 {
   color: var(--white-color);
   font-size: 40px;
@@ -108,14 +90,11 @@ main {
   display: inline;
 }
 
-.hero-contact h2 {
-  font-size: 24px;
-  color: var(--secondary-color);
-}
-
+.hero p,
 .hero-contact p {
-  font-size: 18px;
-  color: var(--secondary-color);
+  font-size: 1.8rem;
+  color: var(--white-color);
+  text-align: center;
 }
 
 .hero-contact p strong {
@@ -123,23 +102,84 @@ main {
   font-size: 20px;
 }
 
-.hero-contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* page contact us: Hero Section Image */
+/* Hero Section Image */
+.hero-image,
 .hero-section-contact img {
   width: 100%;
   height: auto;
   display: block;
+  background-image: url("../images/herodiv/rafting16_1024.jpg");
 }
 
-/* page contact us: Bottom Section */
+/* History Section */
+.history {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 3rem;
+  text-align: center;
+}
+
+.history h2 {
+  color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.history p {
+  flex: 1;
+  padding: 10px;
+}
+
+.history-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Adventures Section */
+.adventures {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 3rem;
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.adventure-gallery figure {
+  flex: 0 1 200px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--background-color);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--background-color);
+}
+
+/* Bottom Section */
 .bottom-section {
   display: flex;
   justify-content: space-between;
@@ -157,46 +197,27 @@ main {
   border-radius: 8px;
 }
 
-/* page contact us: Specialized Support Team */
-.box2 .specialized-support-team > div {
-  flex: 1;
-  padding: 20px;
-  background: var(--tertiary-color);
-  color: var(--tertiary-color);
-  text-align: center;
-  border-radius: 8px;
-  border-color: var(--accent-color);
-}
-
-.bottom-section img {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-}
-
-/* page contact us: Write Message */
+/* Write Message */
 .write_message {
   border-color: var(--tertiary-color);
-  box-sizing: border-box;
-  width: 100%; /* Aumenta a largura para ocupar todo o espaço disponível */
-  max-width: 600px; /* Define um limite máximo de largura */
-  height: auto; /* Permite ajuste automático da altura */
-  min-height: 150px; /* Garante uma altura mínima */
-  padding: 10px; /* Adiciona um espaço interno */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  min-height: 150px;
+  padding: 10px;
 }
-  
+
 .write_message textarea {
-  width: 100%; /* Faz o textarea ocupar todo o espaço da div */
-  height: 150px; /* Define uma altura confortável */
-  resize: vertical; /* Permite ao usuário redimensionar verticalmente */
-  padding: 8px; /* Espaço interno para melhor usabilidade */
-  font-size: 1rem; /* Aumenta a legibilidade */
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  padding: 8px;
+  font-size: 1rem;
   border: 1px solid var(--tertiary-color);
   border-radius: 5px;
 }
 
-/* page contact us: Button */
+/* Button */
 button {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -213,7 +234,7 @@ button:hover {
   background-color: var(--tertiary-color);
 }
 
-/* page contact us: Footer */
+/* Footer */
 .footer {
   background-color: var(--tertiary-color);
   padding: 1.5rem;
@@ -224,7 +245,7 @@ button:hover {
   border-top: var(--border);
 }
 
-/* page contact us: Social Icons */
+/* Social Icons */
 .social-icons {
   display: flex;
   gap: 1rem;
