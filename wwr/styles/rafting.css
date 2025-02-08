@@ -168,6 +168,11 @@ header {
   color: #C7F9CC;
 }
 
+.google-map {
+  border: 0;
+}
+
+
 .box2.support-team {
   display: flex;
   justify-content: center;
