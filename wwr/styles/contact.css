@@ -1,4 +1,4 @@
-/* Global Definitions */
+/* page contact us: Global Definitions */
 :root {
   --primary-color: #0D3651;
   --secondary-color: #22577A;
@@ -15,34 +15,34 @@
   --border: 1px solid #38A3A5;
 }
 
-/* Body Configuration */
+/* page contact us: Body Configuration */
 body {
   font-family: var(--heading-font);
-  background-color: #38A3A5;
-  color: #0D3651;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
-/* Header */
+/* page contact us: Header */
 header {
   margin: 1rem auto;
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
-  border-bottom: 1px solid #C7F9CC;
+  border-bottom: var(--border);
   max-width: 1000px;
   padding: var(--padding);
 }
 
-/* Logo */
+/* page contact us: Logo */
 .logo img {
   margin: 0 0.25rem 0 1rem;
   width: 120px;
   height: auto;
 }
 
-/* Navigation */
+/* page contact us: Navigation */
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@ header {
   margin: 0;
   justify-content: center;
   gap: 10px;
-  background-color: #38A3A5;
+  background-color: var(--tertiary-color);
 }
 
 .navigation li {
@@ -60,7 +60,7 @@ header {
 
 .navigation a {
   display: block;
-  color: #FFFFFF;
+  color: var(--white-color);
   padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -68,12 +68,12 @@ header {
 }
 
 .navigation a:hover {
-  color: #C7F9CC;
+  color: var(--background-color);
   font-weight: 700;
   text-decoration: underline;
 }
 
-/* Main Content */
+/* page contact us: Main Content */
 main {
   display: flex;
   flex-direction: column;
@@ -82,48 +82,48 @@ main {
   padding: 20px;
 }
 
-.container {
+.container-contact {
   width: 100%;
   height: auto;
 }
 
-/* Hero Section */
-.hero {
+/* page contact us: Hero Section */
+.hero-contact {
   position: relative;
-  background-color: #80ED99;
+  background-color: var(--highlight-color);
   background-image: url("../images/banner/rafting14_600.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 3rem;
-  border-bottom: 1px solid #38A3A5;
+  border-bottom: var(--border);
   width: 100%;
   height: auto;
 }
 
-.hero h1 {
-  color: #FFFFFF;
-  font-size: 60px;
-  background-color: #38A3A580;
+.hero-contact h1 {
+  color: var(--white-color);
+  font-size: 40px;
+  background-color: rgba(56, 163, 165, 0.5);
   display: inline;
 }
 
-.hero h2 {
+.hero-contact h2 {
   font-size: 24px;
-  color: #22577A;
+  color: var(--secondary-color);
 }
 
-.hero p {
+.hero-contact p {
   font-size: 18px;
-  color: #22577A;
+  color: var(--secondary-color);
 }
 
-.hero p strong {
+.hero-contact p strong {
   font-weight: bold;
   font-size: 20px;
 }
 
-.hero::before {
+.hero-contact::before {
   content: "";
   position: absolute;
   top: 0;
@@ -132,14 +132,14 @@ main {
   height: 100%;
 }
 
-/* Hero Section Image */
-.hero-section img {
+/* page contact us: Hero Section Image */
+.hero-section-contact img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Bottom Section */
+/* page contact us: Bottom Section */
 .bottom-section {
   display: flex;
   justify-content: space-between;
@@ -150,22 +150,22 @@ main {
 .bottom-section > div {
   flex: 1;
   padding: 20px;
-  background: #FFFFFF;
+  background: var(--white-color);
   color: #002a80;
   font-size: 15px;
   text-align: left;
   border-radius: 8px;
 }
 
-/* Specialized Support Team */
+/* page contact us: Specialized Support Team */
 .box2 .specialized-support-team > div {
   flex: 1;
   padding: 20px;
-  background: #38A3A5;
-  color: #38A3A5;
+  background: var(--tertiary-color);
+  color: var(--tertiary-color);
   text-align: center;
   border-radius: 8px;
-  border-color: #57CC99;
+  border-color: var(--accent-color);
 }
 
 .bottom-section img {
@@ -175,16 +175,31 @@ main {
   margin: 10px auto;
 }
 
+/* page contact us: Write Message */
 .write_message {
-  border-color: #38A3A5;
-  box-sizing: 100 px ;
+  border-color: var(--tertiary-color);
+  box-sizing: border-box;
+  width: 100%; /* Aumenta a largura para ocupar todo o espaço disponível */
+  max-width: 600px; /* Define um limite máximo de largura */
+  height: auto; /* Permite ajuste automático da altura */
+  min-height: 150px; /* Garante uma altura mínima */
+  padding: 10px; /* Adiciona um espaço interno */
+}
+  
+.write_message textarea {
+  width: 100%; /* Faz o textarea ocupar todo o espaço da div */
+  height: 150px; /* Define uma altura confortável */
+  resize: vertical; /* Permite ao usuário redimensionar verticalmente */
+  padding: 8px; /* Espaço interno para melhor usabilidade */
+  font-size: 1rem; /* Aumenta a legibilidade */
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
 }
 
-
-/* Button */
+/* page contact us: Button */
 button {
-  background-color: #0D3651;
-  color: #FFFFFF;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   padding: 12px 18px;
   border: none;
   border-radius: 6px;
@@ -195,21 +210,21 @@ button {
 }
 
 button:hover {
-  background-color: #38A3A5;
+  background-color: var(--tertiary-color);
 }
 
-/* Footer */
+/* page contact us: Footer */
 .footer {
-  background-color: #38A3A5;
+  background-color: var(--tertiary-color);
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
-  border-top: 1px solid #38A3A5;
+  color: var(--white-color);
+  border-top: var(--border);
 }
 
-/* Social Icons */
+/* page contact us: Social Icons */
 .social-icons {
   display: flex;
   gap: 1rem;
@@ -220,14 +235,3 @@ button:hover {
   height: 40px;
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
