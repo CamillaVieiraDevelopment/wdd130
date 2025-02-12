@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
@@ -11,12 +10,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .container {
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas: 
+    grid-template-rows: auto auto;
+    grid-template-areas:
         "cabecalho cabecalho"
         "hero hero"
         "promocoes newsletter"
@@ -26,16 +24,16 @@ body {
     width: 100%;
     height: 100%;
 }
-
 .container div {
     padding: 20px;
     text-align: center;
     font-weight: bold;
 }
-
 .cabecalho { background: #2a9d8f; grid-area: cabecalho; }
 .hero { background: #8b5cf6; grid-area: hero; }
 .promocoes { background: #754321; grid-area: promocoes; }
 .newsletter { background: #f4d35e; grid-area: newsletter; }
 .trips { background: #48cae4; grid-area: trips; }
 .rodape { background: #e63946; grid-area: rodape; }
+
+        

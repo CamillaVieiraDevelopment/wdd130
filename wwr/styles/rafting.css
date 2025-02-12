@@ -2,26 +2,31 @@
 :root {
   --padding: 1rem;
   --border: 1px solid #38A3A5;
+  --primary-color: #38A3A5;
+  --secondary-color: #0D3651;
+  --highlight-color: #C7F9CC;
+  --background-color-light: #80ED99;
+  --background-color-dark: #22577A;
 }
 
 /* Body Configuration */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #38A3A5;
-  color: #0D3651;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 header {
-  margin: 1rem auto;
+  margin: var(--padding) auto;
   display: grid;
   grid-template-columns: 120px 1fr;
   align-items: center;
-  border-bottom: 1px solid #38A3A5;
+  border-bottom: var(--border);
   max-width: 1000px;
-  padding: 1rem;
+  padding: var(--padding);
 }
 
 /* Logo */
@@ -40,7 +45,7 @@ header {
   margin: 0;
   justify-content: center;
   gap: 10px;
-  background-color: #38A3A5;
+  background-color: var(--primary-color);
 }
 
 .navigation li {
@@ -50,14 +55,14 @@ header {
 .navigation a {
   display: block;
   color: #FFFFFF;
-  padding: 20px;
+  padding: 1.25rem; /* 20px */
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Arial, sans-serif;
 }
 
 .navigation a:hover {
-  color: #C7F9CC;
+  color: var(--highlight-color);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -65,17 +70,19 @@ header {
 /* Hero Section */
 .hero,
 .hero-contact {
-  background-color: #80ED99;
+  background-color: var(--background-color-light);
   text-align: center;
   padding: 3rem;
-  border-bottom: 1px solid #38A3A5;
+  border-bottom: var(--border);
   background-image: url("../images/herodiv/rafting16_1024.jpg");
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center; /* Ensures the image is centered */
 }
 
 .hero h1,
 .hero-contact h1 {
   color: #FFFFFF;
-  font-size: 40px;
+  font-size: 2.5rem; /* More appropriate for headings */
   display: inline;
 }
 
@@ -88,7 +95,7 @@ header {
 
 .hero-contact p strong {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem; /* Slightly larger for emphasis */
 }
 
 /* Hero Section Image */
@@ -97,19 +104,19 @@ header {
   width: 100%;
   height: auto;
   display: block;
-  background-image: url("../images/herodiv/rafting16_1024.jpg");
+  object-fit: cover; /* Makes sure the image covers its container */
 }
 
 /* History Section */
 .history {
-  background-color: #C7F9CC;
+  background-color: var(--highlight-color);
   color: #22577A;
   padding: 3rem;
   text-align: center;
 }
 
 .history h2 {
-  color: #0D3651;
+  color: var(--secondary-color);
 }
 
 .content {
@@ -123,7 +130,7 @@ header {
 
 .history p {
   flex: 1;
-  padding: 10px;
+  padding: 0.625rem; /* 10px */
 }
 
 .history-image {
@@ -140,6 +147,7 @@ header {
   padding: 3rem;
 }
 
+
 .adventure-gallery {
   display: flex;
   flex-wrap: nowrap;
@@ -149,10 +157,12 @@ header {
   margin: 0 auto;
 }
 
+
 .adventure-gallery figure {
   flex: 0 1 200px;
   text-align: center;
 }
+
 
 .adventure-gallery img {
   width: 200px;
@@ -162,16 +172,17 @@ header {
   border: 2px solid #C7F9CC;
 }
 
+
 .adventure-gallery figcaption {
   margin-top: 0.5rem;
   font-weight: bold;
   color: #C7F9CC;
 }
 
+
 .google-map {
   border: 0;
 }
-
 
 .box2.support-team {
   display: flex;
@@ -198,23 +209,23 @@ header {
 .bottom-section {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  margin-top: 50px;
+  gap: 3.125rem; /* 50px */
+  margin-top: 3.125rem; /* 50px */
 }
 
 .bottom-section > div {
   flex: 1;
-  padding: 20px;
+  padding: 1.25rem; /* 20px */
   background: #FFFFFF;
   color: #002a80;
-  font-size: 15px;
+  font-size: 1rem; /* More standard font size */
   text-align: left;
   border-radius: 8px;
 }
 
 /* Write Message */
 .write_message {
-  border-color: #38A3A5;
+  border-color: var(--primary-color);
   width: 90%;
   max-width: 500px;
   height: auto;
@@ -228,15 +239,15 @@ header {
   resize: vertical;
   padding: 8px;
   font-size: 1rem;
-  border: 1px solid #38A3A5;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
 }
 
 /* Button */
 button {
-  background-color: #0D3651;
+  background-color: var(--secondary-color);
   color: #FFFFFF;
-  padding: 12px 18px;
+  padding: 0.75rem 1.125rem; /* 12px 18px */
   border: none;
   border-radius: 6px;
   font-size: 1rem;
@@ -246,20 +257,55 @@ button {
 }
 
 button:hover {
-  background-color: #38A3A5;
+  background-color: var(--primary-color);
+  
 }
+
+/* Home/ Index */
+
+.container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto auto;
+  grid-template-areas:        
+      "offers newsletter"
+      "trips newsletter";
+            
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.offers { 
+  background: #38A3A5; 
+  grid-area: offers; /* Correção no nome */
+  padding: 20px;
+}
+
+.newsletter {
+  background: #C7F9CC; 
+  grid-area: newsletter; 
+}
+
+.trips {
+  background: #22577A; 
+  grid-area: trips;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+
 
 /* Footer */
 .footer {
-  background-color: #38A3A5;
+  background-color: var(--primary-color);
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #FFFFFF;
-  border-top: 1px solid #38A3A5;
+  border-top: var(--border);
 }
-
 
 /* Social Icons */
 .social-icons {
@@ -268,7 +314,7 @@ button:hover {
 }
 
 .social-icons img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
   border-radius: 50%;
 }
