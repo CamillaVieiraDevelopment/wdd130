@@ -12,8 +12,8 @@
 /* Body Configuration */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: #0D3651;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +32,7 @@ header {
 /* Logo */
 .logo img {
   margin: 0 0.25rem 0 1rem;
-  width: 120px;
+  width: 200px;
   height: auto;
 }
 
@@ -45,11 +45,13 @@ header {
   margin: 0;
   justify-content: center;
   gap: 10px;
-  background-color: var(--primary-color);
+  
+  
 }
 
 .navigation li {
   flex: none;
+  font-size: 18px;
 }
 
 .navigation a {
@@ -57,7 +59,7 @@ header {
   color: #FFFFFF;
   padding: 1.25rem; /* 20px */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 22px;
   font-family: Arial, sans-serif;
 }
 
@@ -277,7 +279,7 @@ button:hover {
 }
 
 .offers { 
-  background: #38A3A5; 
+  background: #57CC99; 
   grid-area: offers; /* Correção no nome */
   padding: 20px;
   text-align: center;
@@ -287,11 +289,13 @@ button:hover {
 .offers h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #0D3651;
 }
 
 .offers p {
   font-size: 16px;
   margin-bottom: 20px;
+  color: #0D3651
 }
 
 .offers-gallery {
@@ -313,29 +317,54 @@ button:hover {
 .offer-item p {
   margin-top: 10px;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #0D3651;
 }
 
 
 .newsletter {
   background: #C7F9CC; 
-  grid-area: newsletter; 
+  grid-area: newsletter;
+  text-align: center;
+}
+
+.newsletter h2 {
+  padding-top: 12px;
+  color: #0D3651;
+}
+
+.newsletter p {
+  text-align: justify;
+  padding: 15px;
+  padding left: 10 px;
+  color: #0D3651;
+}
+
+
+.newsletter img {
+  padding: 25px;
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  
 }
 
 .trips {
-  background: #57CC99; 
+  background: #38A3A5; 
   grid-area: trips;
   color: #0D3651;
   padding: 20px;
+  display: flex;
+  flex-direction: column; /* Empilha os itens verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
 }
-
-
-
-
 
 /* Footer */
 .footer {
-  background-color: var(--primary-color);
+  background-color: #0D3651;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
