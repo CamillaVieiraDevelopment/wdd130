@@ -280,7 +280,42 @@ button:hover {
   background: #38A3A5; 
   grid-area: offers; /* Correção no nome */
   padding: 20px;
+  text-align: center;
 }
+
+
+.offers h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.offers p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.offers-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.offer-item {
+  text-align: center;
+}
+
+.offer-item img {
+  width: 300px; /* Definindo um tamanho fixo para todas as imagens */
+  height: 200px; /* Ajustando a altura */
+  object-fit: cover; /* Mantém a proporção e corta o excesso, se necessário */
+}
+
+.offer-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
 
 .newsletter {
   background: #C7F9CC; 
@@ -288,11 +323,13 @@ button:hover {
 }
 
 .trips {
-  background: #22577A; 
+  background: #57CC99; 
   grid-area: trips;
-  color: #FFFFFF;
+  color: #0D3651;
   padding: 20px;
 }
+
+
 
 
 
