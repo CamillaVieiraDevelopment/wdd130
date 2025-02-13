@@ -265,7 +265,7 @@ button:hover {
 
 /* Home/ Index */
 
-.container {
+.container-index {
   display: grid;
   grid-template-columns: 75% 25%;
   grid-template-rows: auto auto;
