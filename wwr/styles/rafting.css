@@ -325,6 +325,7 @@ button:hover {
   background: #C7F9CC; 
   grid-area: newsletter;
   text-align: center;
+  
 }
 
 .newsletter h2 {
@@ -351,7 +352,10 @@ button:hover {
 }
 
 .trips {
-  background: #38A3A5; 
+  background: #38A3A5;
+  /*background-image: url(../images/banner/rafting12_1024.jpg);*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
   grid-area: trips;
   color: #0D3651;
   padding: 20px;
@@ -360,6 +364,23 @@ button:hover {
   justify-content: center; /* Centraliza verticalmente */
   align-items: center; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
+}
+
+.trips h2{
+  /*background-color: #002a8095;*/
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+.trips p{
+  /*background-color: #002a8095;*/
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.trips img{
+  width: 600px;
+  height: auto;
 }
 
 /* Trips */
