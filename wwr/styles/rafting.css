@@ -397,14 +397,11 @@ button:hover {
 }
 
 .contact {
-  background: #57CC99;
+  background: #C7F9CC;
   grid-area: contact; /* Correção no nome */
   padding: 20px;
   text-align: center;
 }
-
-
-
 
 .contact h2 {
   font-size: 24px;
@@ -412,13 +409,11 @@ button:hover {
   color: #0D3651;
 }
 
-
 .contact p {
   font-size: 16px;
   margin-bottom: 20px;
   color: #0D3651
 }
-
 
 .contact-gallery {
   display: flex;
@@ -449,7 +444,7 @@ button:hover {
 
 
 .discover {
-  background: #C7F9CC;
+  background: #57CC99;
   grid-area: discover;
   text-align: center;
  
@@ -469,9 +464,6 @@ button:hover {
  
 }
 
-
-
-
 .discover img {
   padding: 25px;
   width: 450px;
@@ -482,44 +474,39 @@ button:hover {
  
 }
 
-
 .tables {
-  background: #38A3A5;
-  /*background-image: url(../images/banner/rafting12_1024.jpg);*/
-  /*background-size: cover;*/
-  /*background-position: center;*/
-  grid-area: tables;
-  color: #0D3651;
-  padding: 20px;
-  display: flex;
-  flex-direction: column; /* Empilha os itens verticalmente */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
+  background-color: #38A3A5 !important;
+  color: #FFFFFF !important;
 }
 
 
-.tables h2{
-  /*background-color: #002a8095;*/
+.tables {
+  background-color: #38A3A5;
+  grid-area: tables;
+  color: #FFFFFF; /* Ajustado para garantir que o texto seja visível */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tables h2 {
   font-size: 35px;
   color: #FFFFFF;
 }
 
-
-.tables p{
-  /*background-color: #002a8095;*/
+.tables p {
+  background-color: #38A3A5; /* Opcional, já que a div pai tem a mesma cor */
   color: #FFFFFF;
   font-size: 15px;
 }
 
-
-.tables img{
+.tables img {
   width: 600px;
   height: auto;
 }
-
-
-
 
 
 /* Footer */
