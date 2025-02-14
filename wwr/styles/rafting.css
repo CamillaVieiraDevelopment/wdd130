@@ -538,12 +538,12 @@ button:hover {
   justify-content: space-around; /* Distribui os itens com espaço entre eles */
   align-items: flex-start; /* Alinha os itens ao topo */
   flex-wrap: wrap; /* Garante que os itens se ajustem em telas menores */
-  padding: 20px;
+  padding: 10px;
 }
 
 
 .other-trips-item {
-  width: 30%; /* Define a largura de cada item */
+  width: 50%; /* Define a largura de cada item */
   text-align: center; /* Centraliza o texto */
 }
 
@@ -578,18 +578,17 @@ button:hover {
 
 
 .other-trips-gallery img {
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid #C7F9CC;
-}
+  
+  }
 
 
 
 
 .other-trips-gallery {
-  margin-top: 0.5rem;
+  margin-top: 20px;
   font-weight: bold;
   color: #C7F9CC;
 }
@@ -627,7 +626,7 @@ button:hover {
 
 
 .table img {
-  width: 600px;
+  width: 100px;
   height: auto;
 }
 
