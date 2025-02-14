@@ -368,14 +368,12 @@ button:hover {
 
 .trips h2{
   /*background-color: #002a8095;*/
-  font-size: 35px;
   color: #FFFFFF;
 }
 
 .trips p{
   /*background-color: #002a8095;*/
   color: #FFFFFF;
-  font-size: 15px;
 }
 
 .trips img{
@@ -396,6 +394,128 @@ button:hover {
   gap: 5px;
   width: 100%;
   height: 100%;
+}
+
+.contact {
+  background: #57CC99;
+  grid-area: contact; /* Correção no nome */
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0D3651;
+}
+
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #0D3651
+}
+
+
+.contact-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as imagens */
+}
+
+
+.contact-item {
+  text-align: center;
+}
+
+
+.contact-item img {
+  width: 300px; /* Definindo um tamanho fixo para todas as imagens */
+  height: 200px; /* Ajustando a altura */
+  object-fit: cover; /* Mantém a proporção e corta o excesso, se necessário */
+}
+
+
+.contact-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0D3651;
+}
+
+
+
+
+.discover {
+  background: #C7F9CC;
+  grid-area: discover;
+  text-align: center;
+ 
+}
+
+
+.discover h2 {
+  padding-top: 12px;
+  color: #0D3651;
+}
+
+
+.discover p {
+  text-align: justify;
+  padding: 25px;
+  color: #0D3651;
+ 
+}
+
+
+
+
+.discover img {
+  padding: 25px;
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+
+.tables {
+  background: #38A3A5;
+  /*background-image: url(../images/banner/rafting12_1024.jpg);*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  grid-area: tables;
+  color: #0D3651;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Empilha os itens verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+
+.tables h2{
+  /*background-color: #002a8095;*/
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+
+.tables p{
+  /*background-color: #002a8095;*/
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+
+.tables img{
+  width: 600px;
+  height: auto;
 }
 
 
