@@ -389,7 +389,7 @@ button:hover {
   grid-template-rows: auto auto;
   grid-template-areas:        
       "contact discover"
-      "contact other-trips"
+      "other-trips other-trips"
       "table table";
       
             
@@ -546,6 +546,55 @@ button:hover {
   width: 30%; /* Define a largura de cada item */
   text-align: center; /* Centraliza o texto */
 }
+
+.other-trips {
+  background-color: #22577A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3rem;
+}
+
+
+
+
+.other-trips-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+
+.other-trips-gallery figure {
+  flex: 0 1 200px;
+  text-align: center;
+}
+
+
+
+
+.other-trips-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #C7F9CC;
+}
+
+
+
+
+.other-trips-gallery {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #C7F9CC;
+}
+
+
 
 
 
