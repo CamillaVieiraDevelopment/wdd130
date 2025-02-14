@@ -389,7 +389,9 @@ button:hover {
   grid-template-rows: auto auto;
   grid-template-areas:        
       "contact discover"
-      "contact table";
+      "contact other-trips"
+      "table table";
+      
             
   gap: 5px;
   width: 100%;
@@ -428,8 +430,8 @@ button:hover {
 
 
 .contact-item img {
-  width: 300px; /* Definindo um tamanho fixo para todas as imagens */
-  height: 200px; /* Ajustando a altura */
+  width: 100 px; /* Definindo um tamanho fixo para todas as imagens */
+  height: auto  ; /* Ajustando a altura */
   object-fit: cover; /* Mantém a proporção e corta o excesso, se necessário */
 }
 
@@ -466,7 +468,8 @@ button:hover {
 
 .discover img {
   padding: 25px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: auto;
   object-fit: cover;
   display: block;
@@ -474,15 +477,83 @@ button:hover {
  
 }
 
-.tables {
+.discover-gallery {
+  display: flex;  /* Ativa o Flexbox */
+  justify-content: space-around; /* Distribui os itens com espaço entre eles */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  flex-wrap: wrap; /* Garante que os itens se ajustem em telas menores */
+  padding: 20px;
+}
+
+.discover-item {
+  width: 30%; /* Define a largura de cada item */
+  text-align: center; /* Centraliza o texto */
+}
+
+.table {
   background-color: #38A3A5 !important;
   color: #FFFFFF !important;
 }
 
+.other-trips {
+  background: #0D3651;
+  grid-area: other-trips;
+  text-align: center;
+ 
+}
 
-.tables {
+
+
+
+.other-trips h2 {
+  padding-top: 12px;
+  color: #FFFFFF;
+}
+
+
+
+
+.other-trips p {
+  text-align: justify;
+  padding: 25px;
+  color: #FFFFFF;
+ 
+}
+
+
+.other-trips img {
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+
+.other-trips-gallery {
+  display: flex;  /* Ativa o Flexbox */
+  justify-content: space-around; /* Distribui os itens com espaço entre eles */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  flex-wrap: wrap; /* Garante que os itens se ajustem em telas menores */
+  padding: 20px;
+}
+
+
+.other-trips-item {
+  width: 30%; /* Define a largura de cada item */
+  text-align: center; /* Centraliza o texto */
+}
+
+
+
+
+
+.table {
   background-color: #38A3A5;
-  grid-area: tables;
+  grid-area: table;
   color: #FFFFFF; /* Ajustado para garantir que o texto seja visível */
   padding: 20px;
   display: flex;
@@ -492,21 +563,25 @@ button:hover {
   text-align: center;
 }
 
-.tables h2 {
+
+.table h2 {
   font-size: 35px;
   color: #FFFFFF;
 }
 
-.tables p {
+
+.table p {
   background-color: #38A3A5; /* Opcional, já que a div pai tem a mesma cor */
   color: #FFFFFF;
   font-size: 15px;
 }
 
-.tables img {
+
+.table img {
   width: 600px;
   height: auto;
 }
+
 
 
 /* Footer */
