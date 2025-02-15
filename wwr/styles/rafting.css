@@ -4,7 +4,7 @@
   --border: 1px solid #38A3A5;
   --primary-color: #38A3A5;
   --secondary-color: #0D3651;
-  --highlight-color: #C7F9CC;
+  --highlight-color:#C7F9CC;
   --background-color-light: #80ED99;
   --background-color-dark: #22577A;
 }
@@ -86,6 +86,9 @@ header {
   color: #FFFFFF;
   font-size: 2.5rem; /* More appropriate for headings */
   display: inline;
+  line-height:2;
+  text-align:center;
+  display: block
 }
 
 .hero p,
@@ -93,6 +96,9 @@ header {
   font-size: 1.8rem;
   color: #FFFFFF;
   text-align: center;
+  padding: 10px;
+  background-color: #22577A80;
+  display: inline-block;
 }
 
 .hero-contact p strong {
@@ -143,7 +149,7 @@ header {
 
 /* Adventures Section */
 .adventures {
-  background-color: #22577A;
+  background-color: #0D3651;
   color: #FFFFFF;
   text-align: center;
   padding: 3rem;
@@ -279,7 +285,7 @@ button:hover {
 }
 
 .offers { 
-  background: #57CC99; 
+  background: #aef1d4; 
   grid-area: offers; /* Correção no nome */
   padding: 20px;
   text-align: center;
@@ -322,7 +328,7 @@ button:hover {
 
 
 .newsletter {
-  background: #C7F9CC; 
+  background: #e5f7e7; 
   grid-area: newsletter;
   text-align: center;
   
@@ -352,7 +358,7 @@ button:hover {
 }
 
 .trips {
-  background: #38A3A5;
+  background: #2f9294;
   /*background-image: url(../images/banner/rafting12_1024.jpg);*/
   /*background-size: cover;*/
   /*background-position: center;*/
@@ -401,7 +407,7 @@ button:hover {
 
 
 .contact-trip {
-  background: #C7F9CC;
+  background: #e5f7e7;
   grid-area: contact; /* Correção no nome */
   padding: 20px;
   text-align: center;
@@ -450,7 +456,7 @@ button:hover {
 
 
 .discover {
-  background: #57CC99;
+  background: #aef1d4;
   grid-area: discover;
   text-align: center;
  
@@ -579,12 +585,12 @@ button:hover {
 .other-trips-gallery {
   margin-top: 20px;
   font-weight: bold;
-  color: #C7F9CC;
+  color: #e5f7e7;
 }
 
 
 .table {
-  background-color: #38A3A5;
+  background-color: #2f9294;
   grid-area: table;
   color: #FFFFFF;
   padding: 20px;
@@ -613,7 +619,7 @@ button:hover {
 
 .table p {
   background-color: #38A3A5;
-  color:#0D3651 ;
+  color:#FFFFFF ;
   font-size: 15px;
   display: block;
   text-align: center;
@@ -643,7 +649,7 @@ button:hover {
 .table th, .table td {
   padding: 10px;
   border: 1px solid white;
-  color: #0D3651;
+  color: #FFFFFF;
   text-align: left;
 }
 
