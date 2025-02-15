@@ -612,16 +612,24 @@ button:hover {
 }
 
 .table h2 {
-  font-size: 35px;
   color: #FFFFFF;
-  text-align: left;
+  text-align: center;
 }
 
 .table p {
   background-color: #38A3A5;
   color:#0D3651 ;
   font-size: 15px;
-  text-align: left;
+  display: block;
+  text-align: center;
+}
+
+.table section h2{
+  text-align: center;
+} 
+
+.table section p{
+  text-align: center;
 }
 
 .table img {
