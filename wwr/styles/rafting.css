@@ -398,50 +398,51 @@ button:hover {
   height: 100%;
 }
 
-.contact {
+.contact-trip {
   background: #C7F9CC;
   grid-area: contact; /* Correção no nome */
   padding: 20px;
   text-align: center;
 }
 
-.contact h2 {
+.contact-trip h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #0D3651;
 }
 
-.contact p {
-  font-size: 16px;
+.contact-trip p {
+  font-size: 20px;
   margin-bottom: 20px;
   color: #0D3651
 }
 
-.contact-gallery {
+.contact-gallery-trip {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Espaçamento entre as imagens */
 }
 
 
-.contact-item {
+.contact-item-trip {
   text-align: center;
 }
 
 
-.contact-item img {
-  width: 100 px; /* Definindo um tamanho fixo para todas as imagens */
-  height: auto  ; /* Ajustando a altura */
+.contact-item-trip img {
+  width: 200px; /* Definindo um tamanho fixo para todas as imagens */
+  height: auto; /* Ajustando a altura */
+  max-width: 100%;
   object-fit: cover; /* Mantém a proporção e corta o excesso, se necessário */
 }
 
 
-.contact-item p {
+.contact-item-trip p {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 20px;
   color: #0D3651;
 }
-
 
 
 
@@ -490,10 +491,7 @@ button:hover {
   text-align: center; /* Centraliza o texto */
 }
 
-.table {
-  background-color: #38A3A5 !important;
-  color: #FFFFFF !important;
-}
+
 
 .other-trips {
   background: #0D3651;
@@ -593,42 +591,68 @@ button:hover {
   color: #C7F9CC;
 }
 
-
-
-
-
-
-
 .table {
   background-color: #38A3A5;
   grid-area: table;
-  color: #FFFFFF; /* Ajustado para garantir que o texto seja visível */
+  color: #FFFFFF;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start; /* Alinha os elementos no início (esquerda) verticalmente */
+  align-items: flex-start; /* Alinha ao início (esquerda) horizontalmente */
+  text-align: left;
 }
 
+.table th,
+.table td {
+  text-align: left; /* Agora as células da tabela ficam alinhadas à esquerda */
+  padding: 10px;
+  border: 0.5px solid white;
+  color: white;
+}
 
 .table h2 {
   font-size: 35px;
   color: #FFFFFF;
+  text-align: left;
 }
-
 
 .table p {
-  background-color: #38A3A5; /* Opcional, já que a div pai tem a mesma cor */
-  color: #FFFFFF;
+  background-color: #38A3A5;
+  color:#0D3651 ;
   font-size: 15px;
+  text-align: left;
 }
-
 
 .table img {
   width: 100px;
-  height: auto;
+  height: 80px;
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid white;
+  color: #0D3651;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: #70bdbe; /* Linhas pares */
+}
+
+.table tr:nth-child(odd) {
+  background-color: #38A3A5; /* Linhas ímpares */
+}
+
+
+
+
+
+
 
 
 
