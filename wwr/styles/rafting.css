@@ -4,9 +4,18 @@
   --border: 1px solid #38A3A5;
   --primary-color: #38A3A5;
   --secondary-color: #0D3651;
-  --highlight-color:#C7F9CC;
+  --highlight-color: #C7F9CC;
   --background-color-light: #80ED99;
   --background-color-dark: #22577A;
+  --white-color: #FFFFFF;
+  --light-green: #aef1d4;
+  --light-teal: #2f9294;
+  --dark-teal: #22577A;
+  --dark-blue: #002a80;
+  --light-blue: #70bdbe;
+  --mid-teal: #57CC99;
+  --off-white: #e5f7e7;
+  --mid-dark-teal: #0D3651;
 }
 
 /* Body Configuration */
